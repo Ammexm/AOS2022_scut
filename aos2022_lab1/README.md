@@ -98,7 +98,7 @@ $ tree . -L 10
         └── 10_5.txt
 ```
 
-![](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_dir.png)
+![](assets/test_dir.png)
 
 ### 测试1   单文件
 
