@@ -108,7 +108,7 @@ line     file
 ----    ----
 1020     1000_20.txt        # 行数右对齐 文件名左对齐
 ```
-![test_1](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_1.png)
+![test_1](assets/test_1.png)
 
 ### 测试2 多文件
 
@@ -120,7 +120,7 @@ line    file
   15     10_5.txt
 1035     total            # 当不只一个文件时输出总行数
 ```
-![test_2](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_2.png)
+![test_2](assets/test_2.png)
 
 ### 测试3 文件夹
 
@@ -134,7 +134,7 @@ line    file
   30     cpp-proj/20_10.txt
  310     total
 ```
-![test_3](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_3.png)
+![test_3](assets/test_3.png)
 
 ### 测试4  --all选项
 
@@ -154,7 +154,7 @@ line    file
 ----    ----
   15    10_5.txt
 ```
-![test_4](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_4.png)
+![test_4](assets/test_4.png)
 
 ### 测试5  -b选项 忽略空行
 
@@ -180,7 +180,7 @@ line    file
   20     cpp-proj/20_10.txt
  250     total
 ```
-![test_5](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_5.png)
+![test_5](assets/test_5.png)
 
 ### 测试6 --suffix选项
 
@@ -197,7 +197,7 @@ line    file
 ----    ----
   60     cpp-proj/50_10.h
 ```
-![test_6](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_6.png)
+![test_6](assets/test_6.png)
 
 ### 测试7 -r选项
 
@@ -212,7 +212,7 @@ line    file
   15     cpp-proj/sub_dir/10_5.txt
  325    total
 ```
-![test_7](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_7.png)
+![test_7](assets/test_7.png)
 
 ### 测试8 混合选项
 
@@ -238,8 +238,8 @@ $ lc -r -b --suffix=txt .        # 递归统计当前文件夹下后缀为txt的
   10     ./cpp-proj/sub_dir/10_5.txt
 1040     total
 ```
-![test_8](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_8.png)
+![test_8](assets/test_8.png)
 
 ### 测试9 异常测试
-![test_error](https://gitee.com/zheng_zhenya/aos11/raw/cxm/assets/test_error.png)
+![test_error](assets/test_error.png)
 
