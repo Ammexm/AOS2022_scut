@@ -1,0 +1,1 @@
+/usr/bin/cc  -O2    CMakeFiles/lc.dir/src/lcTools.c.o CMakeFiles/lc.dir/main/lc.c.o  -o lc 

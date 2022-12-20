@@ -1,0 +1,3 @@
+/mnt/Chenxm/project/aos2022_lab2/c/build/CMakeFiles/rebuild_cache.dir
+/mnt/Chenxm/project/aos2022_lab2/c/build/CMakeFiles/edit_cache.dir
+/mnt/Chenxm/project/aos2022_lab2/c/build/CMakeFiles/lc.dir
