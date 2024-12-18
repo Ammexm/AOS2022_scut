@@ -1,13 +1,14 @@
-# 实验一 文件IO
+# SCUT Advanced Operating Systems Coursework
+## 实验一 文件IO
 
-## 1. 实验目的
+### 1. 实验目的
 
 1. 掌握Linux应用程序命令行参数传递机制
 2. 掌握Linux文件读写操作方法
 3. 掌握Linux目录操作方法
 4. 掌握Linux文件属性获取方法
 
-## 2. 实验任务
+### 2. 实验任务
 
 实现一个代码行统计工具 **lc** （line counter），该工具统计给定目录或文件的代码行数。**lc**命令参数如下：
 
@@ -26,7 +27,7 @@ The options below may be used to control print msg
     -h, --help                    display this Help and exit
 ```
 
-### 输出样例结果
+#### 输出样例结果
 
 程序执行目录假定如下，文件名称为方便实验结果验证，定义为（非空行数_空行数）。
 
@@ -44,7 +45,7 @@ $ tree . -L 10
         └── 10_5.txt
 ```
 
-### 测试1   单文件
+#### 测试1   单文件
 
 ```bash
 $ lc 1000_20.txt
@@ -53,7 +54,7 @@ line     file
 1020     1000_20.txt        # 行数右对齐 文件名左对齐
 ```
 
-### 测试2 多文件
+#### 测试2 多文件
 
 ```bash
 $ lc 1000_20.txt 10_5.txt
@@ -64,7 +65,7 @@ line    file
 1035     total            # 当不只一个文件时输出总行数
 ```
 
-### 测试3 文件夹
+#### 测试3 文件夹
 
 ```bash
 $ lc cpp-proj            # 输出文件夹中所有文件行数
@@ -77,7 +78,7 @@ line    file
  310     total
 ```
 
-### 测试4  --all选项
+#### 测试4  --all选项
 
 ```bash
 $ lc -A 1000_20.txt 10_5.txt
@@ -96,7 +97,7 @@ line    file
   15    10_5.txt
 ```
 
-### 测试5  -b选项 忽略空行
+#### 测试5  -b选项 忽略空行
 
 ```bash
 $ lc -b 1000_20.txt
@@ -121,7 +122,7 @@ line    file
  250     total
 ```
 
-### 测试6 --suffix选项
+#### 测试6 --suffix选项
 
 ```bash
 $ lc -s cpp cpp-proj
@@ -137,7 +138,7 @@ line    file
   60     cpp-proj/50_10.h
 ```
 
-### 测试7 -r选项
+#### 测试7 -r选项
 
 ```bash
 $ lc -r cpp-proj                # 递归遍历子文件夹文件
@@ -151,7 +152,7 @@ line    file
  325    total
 ```
 
-### 测试8 混合选项
+#### 测试8 混合选项
 
 ```bash
 $ lc -r --suffix=txt .            # 递归统计当前文件夹下后缀为txt的文件的行数
@@ -181,7 +182,7 @@ $ lc -r -b --suffix=txt .        # 递归统计当前文件夹下后缀为txt的
 1. 提供异常处理，如文件权限不可读。
 2. 使用 `wc`命令（Linux下的文件行或字节统计命令）与 `lc`分别统计一个大文件行数（>20w行），对比两个命令的执行时间，系统调用数。
 
-## 3. 实验要求
+### 3. 实验要求
 
 1. 使用（C/C++/Rust）中任意两种语言完成本实验，并分析两种实现方案的差异（可从代码、二进制大小、执行效率等方面分析）。
 2. C/C++ 使用CMake或Makefile构建；Rust使用Cargo构建。
